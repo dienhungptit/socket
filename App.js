@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import io from 'socket.io-client';
 
-const socket = io("192.168.0.28:3000"); // replace with the IP of your server, when testing on real devices
+const socket = io("http://localhost:3000"); // replace with the IP of your server, when testing on real devices
 
 export default class App extends Component {
   constructor(props) {
